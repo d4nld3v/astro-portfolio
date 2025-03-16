@@ -1,0 +1,29 @@
+@use "./variables" as *;
+
+.section__benefits {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  .benefits__item {
+    border-left: 1px solid $gray;
+    padding-left: 32px;
+    padding-right: 16px;
+    flex: 1;
+    font-size: 18px;
+
+    .benefits__title {
+      display: block;
+      font-size: 36px;
+      color: $orange;
+      font-family: $font-heading;
+      font-weight: 500;
+    }
+    @media (min-width: 768px) {
+      &:first-child {
+        border-left: none;
+        padding-left: 0;
+      }
+    }
+  }
+}
