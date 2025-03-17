@@ -1,0 +1,251 @@
+---
+import InProgressProject from "./InProgressProject.astro";
+import Angular from "../assets/angular-original.svg";
+import HTML from "../assets/html5-original.svg";
+import Sass from "../assets/sass-original.svg";
+import Git from "../assets/git-original.svg";
+import Bitbucket from "../assets/bitbucket-original.svg";
+import Figma from "../assets/figma-original.svg";
+import Wordpress from "../assets/wordpress-plain.svg";
+import Kotlin from "../assets/kotlin-original.svg";
+import Swift from "../assets/swift-original.svg";
+---
+
+<section id="experience">
+  <h2>
+    Experiencia & Proyectos <span class="line-decoration"></span>
+  </h2>
+
+  <InProgressProject />
+
+  <p class="mt-24">
+    Conoce todos los proyectos que he desarrollado en :
+    <a class="text-orange" href="https://github.com/d4nld3v" target="_blank">
+      github.com/d4nld3v
+    </a>
+  </p>
+
+  <ul class="timeline">
+    <li class="timeline__item">
+      <div>
+        <span class="timeline__item__name">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/knowmad-mood"
+            class="text-orange"
+          >
+            Knowmad mood
+          </a>
+        </span>
+        <span class="timeline__item__year"> 2021 - Actualidad</span>
+      </div>
+      <div class="timeline__item__content">
+        <ul class="d-flex gap-8 mb-16 flex-wrap">
+          <li class="tech-stack__item">
+            <img
+              width="24"
+              height="24"
+              src={Angular.src}
+              alt="Angular"
+              loading="lazy"
+            />
+            Angular
+          </li>
+          <li class="tech-stack__item">
+            <img
+              height="24"
+              width="24"
+              src={HTML.src}
+              loading="lazy"
+              alt="html icon"
+            />
+            HMTL5
+          </li>
+          <li class="tech-stack__item">
+            <img
+              width="24"
+              height="24"
+              src={Sass.src}
+              loading="lazy"
+              alt="Sass"
+            />
+            Sass
+          </li>
+          <li class="tech-stack__item">
+            <img
+              width="24"
+              height="24"
+              src={Git.src}
+              loading="lazy"
+              alt="Git"
+            />
+            Git
+          </li>
+          <li class="tech-stack__item">
+            <img
+              width="24"
+              height="24"
+              src={Bitbucket.src}
+              loading="lazy"
+              alt="Bitbucket"
+            />
+            Bitbucket
+          </li>
+          <li class="tech-stack__item">
+            <img
+              width="24"
+              height="24"
+              src={Figma.src}
+              loading="lazy"
+              alt="Figma"
+            />
+            Figma
+          </li>
+        </ul>
+        Desarrollo Frontend para diferentes clientes, desarrollando interfaces gráficas,
+        funcionalidades y su integración.
+        <ul class="mt-8">
+          <li>
+            - Desarrollo de maquetas visuales en base a un diseño proporcionado.
+          </li>
+          <li>- Creación de componentes reutilizables y personalizados.</li>
+          <li>
+            - Construcción de flujo de pantallas para diferentes procesos.
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="timeline__item">
+      <div>
+        <span class="timeline__item__name">
+          Freelance -
+          <a
+            target="_blank"
+            href="https://pantallarota.ct.ws"
+            class="text-orange"
+          >
+            Web Pantallas Rotas
+          </a>
+        </span>
+        <span class="timeline__item__year"> 2024 - 2025</span>
+      </div>
+      <div class="timeline__item__content">
+        <ul class="d-flex gap-8 mb-16 flex-wrap">
+          <li class="tech-stack__item">
+            <img
+              width="24"
+              height="24"
+              src={Wordpress.src}
+              loading="lazy"
+              alt="Wordpress"
+            />
+            Wordpress
+          </li>
+        </ul>
+        Desarrollo completo de una Web en Wordpress para un profesional técnico de
+        reparaciones de dispositivos y consultor informático.
+        <p class="mt-4">
+          <i>
+            No se hace cargo de los cambios que se produzcan después del
+            desarrollo.
+          </i>
+        </p>
+        <ul class="mt-8">
+          <li>- Diseño y desarrollo de la web.</li>
+          <li>- Creación de contenido y configuración inicial de SEO.</li>
+          <li>
+            - Configuración de plugins (plugin de reservas) y optimización de
+            velocidad.
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="timeline__item">
+      <div>
+        <span class="timeline__item__name">
+          Freelance -
+          <a
+            href="https://play.google.com/store/apps/details?id=com.reglasdeortografia.concurso&hl=es_419"
+            class="text-orange"
+            target="_blank"
+          >
+            Apps Concurso de Ortografía
+          </a>
+        </span>
+        <span class="timeline__item__year">2023</span>
+      </div>
+      <div class="timeline__item__content">
+        <ul class="d-flex gap-8 mb-16 flex-wrap">
+          <li class="tech-stack__item">
+            <img
+              width="24"
+              height="24"
+              src={Kotlin.src}
+              loading="lazy"
+              alt="Kotlin"
+            />
+            Kotlin
+          </li>
+
+          <li class="tech-stack__item">
+            <img
+              width="24"
+              height="24"
+              src={Swift.src}
+              loading="lazy"
+              alt="Swift"
+            />
+            Swift
+          </li>
+        </ul>
+        Desarrollo de una app para Android y iPhone/iPad sobre un concurso de ortografía
+        basado en una Webview de la propia página web.
+        <p class="mt-4">
+          <i>
+            No se hace cargo de los cambios que se produzcan después del
+            desarrollo.
+          </i>
+        </p>
+        <ul class="mt-8">
+          <li>- Creación de la portabilidad de la web a las Apps.</li>
+          <li>- Configuración de la Webview y adaptación de la página web.</li>
+          <li>- Publicación en Google Play y App Store.</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<style lang="scss">
+  h2 {
+    margin-top: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 48px;
+      margin-bottom: 48px;
+    }
+  }
+
+  p {
+    margin-top: 4px;
+  }
+
+  ul {
+    margin-top: 8px;
+  }
+
+  .timeline__item__content > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .timeline {
+    margin-top: 48px;
+  }
+</style>

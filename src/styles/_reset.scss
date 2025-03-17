@@ -81,3 +81,16 @@ select {
 body {
   font-family: $font-body;
 }
+
+/* Reset link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Reset list styles */
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}

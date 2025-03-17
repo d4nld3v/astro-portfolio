@@ -1,0 +1,58 @@
+@use "variables" as *;
+.inprogress-project {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px,
+    0px -4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 24px;
+  margin-bottom: 16px;
+  background-color: $white;
+
+  @media (min-width: 768px) {
+    padding: 32px;
+  }
+
+  .card-header {
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 16px;
+    p {
+      font-family: $font-heading;
+      font-style: italic;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+    .subtitle {
+      font-size: 20px;
+      font-weight: bold;
+      color: $orange;
+      text-transform: uppercase;
+    }
+  }
+
+  .badge-list {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+
+  .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    background-color: $orange;
+    padding: 1px 8px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .tech-stack__item {
+    margin-bottom: 8px;
+  }
+}
