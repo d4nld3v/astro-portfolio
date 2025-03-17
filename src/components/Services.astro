@@ -1,0 +1,38 @@
+---
+import DevIcon from "../assets/dev.png";
+---
+
+<section id="services">
+  <h2>Servicios <span class="line-decoration"></span></h2>
+  <div class="services__container">
+    <div class="services__item">
+      <div class="services__icon">
+        <img
+          src={DevIcon.src}
+          width="32"
+          height="32"
+          alt="Icono de desarrollo"
+        />
+      </div>
+
+      <h3 class="service__title">Desarrollo Fullstack y multiplataforma</h3>
+      <p>
+        Desarrollo web completas o aplicaciones tanto móviles como de escritorio
+        desde cero, con tecnologías modernas y minimalistas desde el diseño
+        hasta la implementación.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 48px;
+      margin-bottom: 32px;
+    }
+  }
+</style>

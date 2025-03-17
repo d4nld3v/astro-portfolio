@@ -5,6 +5,8 @@
 //@use "./utilities";
 @use "./header";
 @use "./about";
+@use "./services";
+@use "./faqs";
 
 header,
 main {
@@ -53,4 +55,25 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 -1px 2px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
+}
+
+button,
+.btn {
+  display: flex;
+  width: max-content;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: $orange;
+  color: $white;
+  font-size: 18px;
+  font-family: $font-body;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($orange, 10%);
+  }
 }

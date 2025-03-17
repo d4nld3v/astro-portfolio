@@ -1,0 +1,61 @@
+@use "./variables" as *;
+
+.h3 {
+  text-transform: none;
+  font-weight: 400;
+  font-size: 30px;
+  justify-content: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: $orange;
+    bottom: -6px;
+    left: auto;
+    right: auto;
+  }
+}
+
+.services__asks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  details {
+    padding: 16px 24px;
+    cursor: pointer;
+    border: 1px solid $gray;
+    border-radius: 8px;
+    background-color: $white;
+
+    summary {
+      font-size: 20px;
+
+      strong {
+        @media (min-width: 768px) {
+          margin-left: 24px;
+        }
+      }
+
+      &::marker {
+        color: $orange;
+      }
+    }
+
+    p {
+      margin-top: 16px;
+      font-size: 18px;
+      @media (min-width: 768px) {
+        padding-left: 47px;
+      }
+    }
+    a {
+      color: $orange;
+      cursor: pointer;
+    }
+  }
+}

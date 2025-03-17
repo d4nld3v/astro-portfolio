@@ -1,0 +1,40 @@
+---
+import Linkedin from "../assets/linkedin-original.svg";
+import Github from "../assets/github-original.svg";
+import Twitter from "../assets/twitter-original.svg";
+---
+
+<ul role="list">
+  <li>
+    <a
+      href="https://www.linkedin.com/in/daniel-enríquez-baena-aa1347214/"
+      target="_blank"
+      aria-label="LinkedIn link"
+    >
+      <img width="32" height="32" src={Linkedin.src} alt="LinkedIn icon" />
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://github.com/d4nld3v"
+      target="_blank"
+      aria-label="Github link"
+    >
+      <img width="32" height="32" src={Github.src} alt="GitHub icon" />
+    </a>
+  </li>
+  <li>
+    <a href="https://x.com/d4nld3v" target="_blank" aria-label="Twitter link">
+      <img width="32" height="32" src={Twitter.src} alt="Twitter icon" />
+    </a>
+  </li>
+</ul>
+
+<style lang="scss">
+  ul {
+    display: flex;
+    gap: 16px;
+    padding-left: 0;
+    margin-top: 24px;
+  }
+</style>
