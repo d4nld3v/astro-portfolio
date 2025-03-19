@@ -7,7 +7,6 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-       "predeploy": "astro build && find dist -name '*.html' -exec sed -i '' 's|/_astro/|./_astro/|g' {} +",
     "deploy": "npx gh-pages -d dist"
   },
   "dependencies": {
